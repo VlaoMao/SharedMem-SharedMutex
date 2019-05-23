@@ -12,6 +12,7 @@
 class SharedMemory
 {
 public:
+    // TODO: save the size of mem inside
     SharedMemory(const std::string name, const size_t size, const int flags = O_RDWR)
         : m_ptr(NULL), m_size(0), m_created(false), m_name(name)
     {
